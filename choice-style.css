@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+#main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(226, 252, 204);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-family: Madimi One;
+  font-weight: 1200;
+  position: absolute;
+}
+
+#instruction {
+  top: 6vh;
+  color: rgb(61, 141, 122);
+  width: calc(20vh + 20vw);
+  font-size: calc(2.4vh + 2.4vw);
+  text-align: center;
+}
+
+img {
+  position: absolute;
+  width: calc(12vh + 12vw);
+  height: auto;
+}
+
+#bhaiya {
+  top: 16vh;
+  left: 10vw;
+  animation: idle 6s ease-in-out -1s infinite;
+}
+
+#bhaiya-name {
+  top: 16vh;
+  left: 50vw;
+  color: rgb(179, 216, 168);
+  width: calc(20vh + 20vw);
+  font-size: calc(2.2vh + 2.2vw);
+  -webkit-text-stroke: calc(.1vh + .1vw) rgb(61, 141, 122);
+  text-align: left;
+}
+
+#bhaiya-desc {
+  top: 21vh;
+  left: 50vw;
+  color: rgb(61, 141, 122);
+  width: calc(12vh + 12vw);
+  font-size: calc(1.2vh + 1.2vw);
+  text-align: left;
+}
+
+#abrar {
+  top: 38vh;
+  left: 10vw;
+  animation: idle 6s ease-in-out -2s infinite;
+}
+
+#abrar-name {
+  top: 40vh;
+  left: 50vw;
+  color: rgb(179, 216, 168);
+  width: calc(20vh + 20vw);
+  font-size: calc(2.2vh + 2.2vw);
+  -webkit-text-stroke: calc(.1vh + .1vw) rgb(61, 141, 122);
+  text-align: left;
+}
+
+#abrar-desc {
+  top: 45vh;
+  left: 50vw;
+  color: rgb(61, 141, 122);
+  width: calc(12vh + 12vw);
+  font-size: calc(1.2vh + 1.2vw);
+  text-align: left;
+}
+
+#saibah {
+  top: 68vh;
+  left: 10vw;
+  animation: idle 6s ease-in-out -3s infinite;
+}
+
+#saibah-name {
+  top: 68vh;
+  left: 50vw;
+  color: rgb(179, 216, 168);
+  width: calc(20vh + 20vw);
+  font-size: calc(2.2vh + 2.2vw);
+  -webkit-text-stroke: calc(.1vh + .1vw) rgb(61, 141, 122);
+  text-align: left;
+}
+
+#saibah-desc {
+  top: 73vh;
+  left: 50vw;
+  color: rgb(61, 141, 122);
+  width: calc(12vh + 12vw);
+  font-size: calc(1.2vh + 1.2vw);
+  text-align: left;
+}
+
+@keyframes idle {
+  0% {transform: scale(100%);}
+  50% {transform: scale(88%);}
+  100% {transform: scale(100%);}
+}

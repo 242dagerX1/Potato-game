@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+#main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(226, 252, 204);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#question {
+  top: 35vh;
+  width: calc(30vh + 30vw);
+  color: rgb(179, 216, 168);
+  font-family: Madimi One;
+  font-weight: 1200;
+  -webkit-text-stroke: calc(.2vh + .2vw) rgb(61, 141, 122);
+  font-size: calc(4vh + 4vw);
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+button {
+  top: 55vh;
+  height: 6vh;  
+  width: 30vw; 
+  color: rgb(179, 216, 168);
+  background-color: rgb(179, 216, 168);
+  font-family: Madimi One;
+  font-weight: 1200;
+  font-size: calc(2.2vh + 2.2vw);
+  -webkit-text-stroke: calc(.16vh + .16vw) rgb(61, 141, 122);
+  border: calc(.22vh + .22vw) solid rgb(61, 141, 122);
+  border-radius: calc(2.4vh + 2.4vw);
+  text-align: center;
+  position: absolute;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  z-index: 1;
+}
+
+img {
+  position: absolute;
+  z-index: 0;
+}
+
+#potato1{
+  width: calc(6vh + 6vw);
+  height: auto;
+  top:-10vh ;
+  right: 18vw;
+  rotate: -8deg;
+  animation-name: dropl4, rotate;
+  animation-timing-function: linear;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: .3s;
+}
+
+#potato2{
+  width: calc(12vh + 12vw);
+  height: auto;
+  top:-15vh;
+  left: 10vw;
+  rotate: 8deg;
+  animation-name: dropl3, rotate;
+  animation-timing-function: linear;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+
+#potato3{
+  width: calc(7vh + 7vw);
+  height: auto;
+  top:-10vh ;
+  right: 16vw;
+  rotate: -10deg;
+  animation-name: dropl2, rotate;
+  animation-timing-function: linear;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: .1s;
+}
+
+#potato4{
+  width: calc(6.8vh + 6.8vw);
+  height: auto;
+  top:-10vh;
+  left: 16vw;
+  rotate: 12deg;
+  animation-name: dropl1, rotate;
+  animation-timing-function: linear;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  45% {transform: rotate(360deg);}
+}
+
+@keyframes dropl1 {
+  10% {top: 16vh;}
+  25% {top: 6vh;}
+  45% {top: 13vh;}
+  70% {top: 8vh;}
+  100% {top: 10vh;}
+}
+@keyframes dropl2 {
+  10% {top: 26vh;}
+  25% {top: 16vh;}
+  45% {top: 23vh;}
+  70% {top: 18vh;}
+  100% {top: 20vh;}
+}
+@keyframes dropl3 {
+  10% {top: 71vh;}
+  25% {top: 61vh;}
+  45% {top: 68vh;}
+  70% {top: 63vh;}
+  100% {top: 65vh;}
+}
+@keyframes dropl4 {
+  10% {top: 84vh;}
+  25% {top: 74vh;}
+  45% {top: 81vh;}
+  70% {top: 76vh;}
+  100% {top: 78vh;}
+}

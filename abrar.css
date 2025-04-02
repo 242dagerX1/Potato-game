@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+#main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(163, 209, 198);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-family: Madimi One;
+  font-weight: 1200;
+  position: absolute;
+  opacity: 0;
+}
+
+img {
+  top: 90vh;
+  position: absolute;
+  width: calc(15vh + 15vw);
+  height: auto;
+  transform: scale(0%);
+  animation: imgtransformation 2s linear forwards;
+}
+
+#top-text {
+  top: 16vh;
+  color: rgb(179, 216, 168);
+  width: calc(25vh + 25vw);
+  font-size: calc(3vh + 3vw);
+  -webkit-text-stroke: calc(.2vh + .2vw) rgb(61, 141, 122);
+  text-align: center;
+  animation: textopacity 2s linear forwards;
+}
+
+#bottom-text {
+  top: 68vh;
+  color: rgb(179, 216, 168);
+  width: calc(20vh + 20vw);
+  font-size: calc(3vh + 3vw);
+  -webkit-text-stroke: calc(.2vh + .2vw) rgb(61, 141, 122);
+  text-align: center;
+  animation: textopacity 2s linear 2s forwards;
+}
+
+@keyframes textopacity {
+  100% {opacity: 1;}
+}
+
+@keyframes imgtransformation{
+  100% {transform: scale(100%); top: 30vh;}
+}
